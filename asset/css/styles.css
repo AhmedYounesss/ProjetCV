@@ -1,0 +1,112 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background: #E4E4E4;
+  font-size: 13px;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  background: #57BCDC;
+  max-width: 1060px;
+  margin: 0 auto;
+  position: relative;
+}
+.sidebar-wrapper {
+  background: #57BCDC;
+  position: absolute;
+
+  left: 0;
+  width: 240px;
+  height: 100%;
+  min-height: 800px;
+  color: #fff;
+}
+.sidebar-wrapper a {
+  color: #fff;
+}
+.sidebar-wrapper .myPic-container {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidebar-wrapper .myPic {
+  margin-bottom: 15px;
+  width: 80%;
+  border-radius: 30% 30% 30% 30%;
+}
+
+.sidebar-wrapper .contact-list li {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .contact-list .email .fa {
+  font-size: 14px;
+}
+.sidebar-wrapper .container-block {
+  padding: 30px;
+}
+
+.main-wrapper {
+  background: #fff;
+  padding: 60px 50px 60px 280px;
+}
+.main-wrapper .section-title {
+
+  font-size: 27px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.main-wrapper .section-title .fa {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #2d7788;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+
+.main-wrapper .projects-section .intro {
+  margin-bottom: 30px;
+}
+.main-wrapper .projects-section .item {
+  margin-bottom: 15px;
+}
+.skillset .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.skillset .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}

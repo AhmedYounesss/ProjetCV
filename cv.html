@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html ng-app="cvApp" >
+<head>
+    <title>CV Ahmed Younes </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <script src="asset/js/cv.js"></script>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="asset/css/styles.css">
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+</head>
+
+<body ng-controller="myCVCtrl">
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="myPic-container">
+                <img class="myPic" src="asset/images/myPic.png" />
+                <h2 >{{name}}</h2>
+                <h3 class="tagline">{{titre}}</h3>
+            </div>
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li ><i class="fa fa-envelope"></i><a href=""> ahmed.youne@gmail.com</a></li>
+                    <li ><i class="fa fa-phone"></i><a href="tel:0123 456 789"> 00216 26058608</a></li>
+                    <li ><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/younes-ahmed-3730ab95?trk=nav_responsive_tab_profile#" target="_blank"> linkedin.com/AY</a></li>
+                    <li ><i class="fa fa-github"></i><a href="https://github.com/AhmedYounesss" target="_blank"> github.com/AY</a></li>
+                    <li ><i class="fa fa-twitter"></i><a href="https://twitter.com/ahmedYounessss" target="_blank"> @twittername/AY</a></li>
+
+
+                </ul>
+            </div>
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Formation</h2>
+                <div>
+                    <h4> Ingénieur GL</h4>
+                    <h5 >Suptech</h5>
+                    <div>2010 - 2013</div>
+                </div>
+                <div >
+                    <h4>Liscence Informatique</h4>
+                    <h5>Faculté des sciences</h5>
+                    <div>2007 - 2010</div>
+                </div>
+            </div>
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Langues</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Anglais <span class="lang-desc">(Native)</span></li>
+                    <li>Francais <span class="lang-desc">(Professionnelle)</span></li>
+                </ul>
+            </div>
+
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Intérêts</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Football</li>
+                    <li>Voyages</li>
+                    <li>Natation</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="main-wrapper">
+            
+            <section>
+                <h2 class="section-title"><i class="fa fa-street-view"></i>{{for}}
+                </h2>
+                <div>
+                    <p>Bonne expérience en développement informatique et spécialement Open ERP,Angularjs et
+                        Nodejs</p>
+                </div>
+            </section>
+            
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fa fa-road"></i>{{exp}}</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h2 class="job-title">Développeur Fullstack</h2>
+                            <div class="time">Janvier 2016 - Present <b>(Craft-Academy)</b></div>
+                        </div>
+                        <br>
+                    </div>
+                    <div>
+                      <p>
+                          Craft Academy propulse les ingénieurs en informatique dans les nouveaux métiers avec 4 challenges à réussir : DevOps / Dev Full Stack / Data Manager / CyberGuard.
+
+                          La sélection se fait lors d'un casting où les candidats doivent faire valoir leurs compétences techniques, leur savoir-être et leur capacité à travailler en équipe et à communiquer.
+                          Chaque promotion est limitée strictement à 30 places.
+                          3 mois de blended formation, en présentiel et à partir de MOOCs, qui se finalise par 2 hackathons en équipe.
+
+                          Mais entrer à la Craft Academy n'est pas l'assurance d'en sortir cerfifié : 3 jurys ponctuent cette formation. Si les candidats n'ont pas obtenu le niveau requis pour la suite, ils sont éliminés et quittent la Craft Academy.
+
+                          Tous les Crafteurs ayant réussi la certification finale gagnent un CDI dans une société de renom afin de mettre en pratique ces nouvelle compétences.
+
+
+                      </p>                    </div>
+                </div>
+                
+                <div>
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3>{{jobTitle}} </h3>
+                            <div>octobre 2014 - octobre 2015 <b>(NGI Maghreb)</b></div>
+                        </div>
+                        <br>
+
+                    </div>
+                    <div class="details">
+                        <p>NGI Maghreb propose une large gamme de
+                            solutions et de services adaptés à vos besoins en cartographie et en
+                            information géographique. NGI Maghreb a mis œuvre des partenariats commerciaux avec des majors des secteurs visés (Télécommunication, Énergie, Banques, Transport, Sécurité). A ce jour, NGI Maghreb est considéré comme un des leaders du secteur, de par sa maîtrise de l’ensemble de la chaîne technologique et grâce à son professionnalisme.
+
+                        </p>
+
+
+                    </div>
+                </div>
+                
+
+                
+            </section>
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><i ></i>{{proj}}</h2>
+                <div class="intro">
+                    <p>Principales application développées en angularjs et nodejs :
+                        </p>
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="#hook">NGI Provisioning:</a></span><span class="project-tagline">
+                    NGI Provisioning est un projet interne a pour but d’organiser et
+                    d’optimiser la gestion des stocks,
+                   des installations et d’améliorer le service après-vente. </span>
+                    
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="#" target="_blank">NGI WebMap</a></span> -
+                    <span class="project-tagline">NGI WebMap est une solution de cartographie interactive qui s'adresse aux Entreprises
+souhaitant à partir de leur site Internet présenter au Grand Public leur Information à caractère
+spatial comme leur réseau d'agences ou de points de vente.
+                        <br>
+                    <a href="http://webmap.ngi-maghreb.com/">NGI Web Map</a>
+                        <br>
+
+                    <a href="http://webmap.ngi-maghreb.com/habra">NGI Web Map habra</a>
+                        <br>
+                    <a href="http://webmap.ngi-maghreb.com/education">NGI Web Map Education</a>
+                        <br>
+                    <a href="http://webmap.ngi-maghreb.com/zitouna">NGI Web Map zitouna</a>
+                        <br>
+                    <a href="http://webmap.ngi-maghreb.com/biat">NGI Web Map biat</a>
+                        <br>
+                        <a href="http://delivery.ngi-maghreb.com/">NGI Web Map Delivery</a>
+                        <br>
+
+                    </span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="#" target="_blank">NGI Fleet</a></span> - <span class="project-tagline">NGI Fleet est une solution clef en main de Géolocalisation GPS/GPRS
+ou Satellitaire de véhicules qui permet, à travers un portail web, de localiser, suivre et mesurer
+l'activité des véhicules partout :</span>
+                </div>
+
+                <div class="item">
+                <div class="meta">
+                <div class="upper-row">
+                <h3 class="job-title">{{titre2}}</h3>
+                <div class="time">Janvier 2014 - octobre 2015 <b>(MT-Consulting)</b></div>
+                </div>
+                <div class="details">
+                <p>                    Principales applications développées :</p>
+
+                    <ul>
+
+                   <li> Application de gestion des paroissiens.</li>
+
+                        <li>Application de gestion des pesticides.</li>
+                        <li> Application de système de qualité et management.</li>
+                        <li>Application gestion des chantiers.</li>
+
+                    </ul>
+                </div>
+                </div>
+                    </div>
+
+
+            </section>
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-plus"></i>{{comp}} </h2>
+                <div class="skillset">        
+
+                    
+                    <div class="item">
+                        <h3 class="level-title">Javascript &amp; jQuery &amp; AJAX</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" >
+                            </div>                                      
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">Angularjs &amp; Nodejs</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner">
+                            </div>                                      
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS &amp; Saas &amp; Compass</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" >
+                            </div>                                      
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Odoo &amp; XML</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" >
+                            </div>                                      
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">Mysql &amp; PostgreSQL &amp; Mongodb. </h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" >
+                            </div>                                      
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3 class="level-title">Windows &amp; Linux &amp; DOS </h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" >
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>  
+            </section>
+            
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html> 
+
